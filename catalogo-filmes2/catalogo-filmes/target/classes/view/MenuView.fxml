@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15" prefWidth="300" prefHeight="200"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.MenuController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Catálogo de Filmes" style="-fx-font-size: 18px;"/>
+    <Button text="Gerenciar Gêneros" onAction="#abrirGeneros" prefWidth="200"/>
+    <Button text="Gerenciar Filmes" onAction="#abrirFilmes" prefWidth="200"/>
+</VBox>

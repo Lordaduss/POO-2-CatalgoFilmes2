@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" prefWidth="450" prefHeight="400"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.GeneroController">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <HBox spacing="10">
+        <Label text="Nome:"/>
+        <TextField fx:id="txtNome" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button text="Inserir" onAction="#inserir"/>
+        <Button text="Atualizar" onAction="#atualizar"/>
+        <Button text="Excluir" onAction="#excluir"/>
+        <Button text="Limpar" onAction="#limpar"/>
+    </HBox>
+
+    <TableView fx:id="tabela" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="300"/>
+        </columns>
+    </TableView>
+</VBox>
